@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: 11 94 215;
+  --color-primary-hover: 8 66 152;
+  --color-accent: 61 165 255;
+  --navbg:6, 53, 122;
+  --nav-Primary-bg:16, 59, 122;
+  --nav-Secondary-bg:14, 52, 107;
+  --Main-Background:  230, 237, 247;
+  --Secondary-Background : 241, 245, 249;
+  --Card--Background  :255, 255, 255 ;  
+  --Primary-Text :6, 53, 122;
+  --Secondary-Text : 107, 114, 128;
+  --Muted-Text : 156, 163, 175;       
+  --White-Text : 255, 255, 255;        
+}
+
+.logo-font {
+  font-family: 'Pacifico', cursive;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+.input {
+  @apply w-full border border-gray-200 px-4 py-2 rounded-lg 
+  focus:ring-2 focus:ring-blue-500 outline-none;
+}
